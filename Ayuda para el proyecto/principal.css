@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Global Tags */
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(35, 35, 85)
+}
+
+span{
+    font-size: .9rem;
+    color: #757373;
+}
+
+h6{
+    font-size: 1.1rem;
+    color: rgb(24, 24, 49);
+}
+
+
+
+/* Home */
+
+#Home {
+    background-image: linear-gradient(rgba(9, 5, 54, 0.3),rgba(5,4,46,0.7)),url("images/I.E.Tapartó.png");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#Home h2 {
+    color: #fff;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+#Home p {
+    width: 50%;
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+
+#Home .btn{
+    margin-top: 30px;
+}
+
+#Home a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+#Home a.blue{
+    color: #fff;
+    background: rgb(21, 21, 100);
+    transition: 0.3s ease;
+}
+
+#Home a.blue:hover{
+    color: rgb(21, 21, 100);
+    background: #fff;
+}
+
+#Home a.yellow {
+    color: #fff;
+    background: #FDC93B;
+    transition: 0.3s ease;
+}
+
+#Home a.yellow:hover{
+    color: rgb(21, 21, 100);
+    background: #fff;
+} 
+
+/*features*/
+
+#features{
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+}
+
+#features .fea-base{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+
+#features .fea-box{
+    background: #f9f9ff;
+    text-align: start;
+}
+
+#features .fea-box i{
+    font-size: 2.3rem;
+    color: rgb(44, 44, 80);
+}
+
+#features .fea-box h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(46, 46, 59);
+    padding: 13px 0 7px 0;
+}
+
+#features .fea-box p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(70, 70, 87);
+}
+
+/* registration */
+
+#Registration{
+    padding: 6vw 8vw 6vw 8vw;
+    background-image: linear-gradient(rgba(99,112,168,0.5), rgba(81,91,233,0.5)),
+    url(images/I.E.Tapartó.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Registration .reminder{
+    color: #fff;
+}
+
+#Registration .reminder h1{
+    color: #fff;
+}
+
+#Registration .reminder .time{
+    display: flex;
+    margin-top: 40px;
+}
+
+#Registration .reminder .time .date{
+    text-align: center;
+    padding: 13px 33px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 10px;
+    margin: 0 5px 10px 5px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+#Registration .form{
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+#Registration .form input{
+    margin: 15px 0;
+    padding: 15px 10px;
+    border: 1px solid rgb(84, 40, 241);
+    outline: none;
+}
+
+#Registration .form input::placeholder{
+    color: #413c3c;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+#Registration .form .btn{
+    margin-top: 20px;
+}
+
+#Registration .form a.yellow {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    color: #fff;
+    background: #FDC93B;
+    transition: 0.3s ease;
+}
+
+#Registration .form a.yellow:hover{
+    color: rgb(21, 21, 100);
+    background: #fff;
+} 
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+nav{
+	max-width: 100%;
+	margin: auto;
+	background-color: #333;
+	font-size: 20px;
+	margin-top: 50px;
+    top: 0;
+    left: 0;
+}
+.menu-horizontal{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+    top: 0;
+    left: 0;
+
+}
+.menu-horizontal > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: white;
+	text-decoration: none;
+    top: 0;
+    left: 0;
+}
+.menu-horizontal > li:hover{
+	background-color: rgb(0, 110, 255);
+    top: 0;
+    left: 0;
+}
+.menu-vertical{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 200px;
+	background-color: rgba(0, 0, 0, .5);
+    top: 0;
+    left: 0;
+}
+.menu-horizontal li:hover .menu-vertical{
+	display: block;
+    top: 0;
+    left: 0;
+}
+.menu-vertical li:hover{
+	background-color: black;
+    top: 0;
+    left: 0;
+}
+
+.menu-vertical li a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 15px 15px 15px 20px;
+    top: 0;
+    left: 0;
+}
+
